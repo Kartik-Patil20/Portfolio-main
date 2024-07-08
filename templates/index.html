@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio | Kartik Patil </title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        {% load static %}
+        <nav>
+            <a href="/" class="logo">K</a>
+            <ul>
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#portfolio-loc">Portfolio</a></li>
+                <li><a href="#contact-loc">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="landing">
+            <div class="intro">
+                
+                <img class="img_pro" src="{% static '/images/profile-photo.png' %}" alt="Profile Photo">
+                
+                <h3>I'M <span>Web Dev</span><br>Python Developer & Web<br>Developer Consultant</h3>
+                <a class="Hire" href="mailto:Kartikpatil5719@gmail.com">
+                    <button class="hire-me">Hire Me</button>
+                </a>
+                <a class="Resume" href="{% static '/Kartik_Patil1 (Python Developer).pdf' %}" download="Kartik_Patil.pdf">
+                    <button class="resume">Resume</button>
+            </div>
+            <div class="socials">
+                <div class="line"></div>
+                <a href="https://github.com/Kartik-Patil20" target="_blank">
+                    <i class="ri-github-fill"></i>
+                </a>
+                <a href="https.//linkedin.com/in/kartik-patil20" target="_blank">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+                <a href="https://x.com/Kartik_Patil_20" target="_blank">
+                    <i class="ri-twitter-fill"></i>
+                </a>
+                <a href="https://wa.me/9148545719" target="_blank">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="about">
+        <h1>About</h1>
+        <div class="description">
+            <div class="line"></div>
+            <p>I am a dedicated Django Developer with over 1.7 years of experience in creating and maintaining dynamic web applications. Currently, I am an apprentice at Masterwits Software Solutions, where I have been honing my skills in Django development since December 2023. Previously, I worked as a <span> Django Developer at Tata Consultancy Services</span> from December 2021 to December 2022. My expertise lies in developing robust web applications, implementing RESTful APIs, and optimizing performance. I am passionate about continuous learning and collaborating with cross-functional teams to deliver high-quality solutions.</p>
+        </div>
+    </section>
+    <section class="skills">
+        <h1>My Skills</h1>
+        <div class="cards">
+            <div class="skill-card">
+                <img src="{% static '/python.svg' %}" alt="">
+                <h2>Python</h2>
+            </div>
+            <div class="skill-card">
+                <img src="{% static '/django.svg' %}" alt="">
+                <h2>Django</h2>
+            </div>
+            <div class="skill-card">
+                <img src="{% static '/html.svg' %}" alt="">
+                <h2>HTML</h2>
+            </div>
+            <div class="skill-card">
+                <img src="{% static '/css.svg' %}" alt="">
+                <h2>CSS</h2>
+            </div>
+            <div class="skill-card">
+                <img src="{% static '/js.svg' %}" alt="">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="skill-card">
+                <img src="{% static '/git.svg' %}" alt="">
+                <h2>GIT</h2>
+            </div>
+            <div class="skill-card">
+                <img src="{% static '/mysql.svg' %}" alt="">
+                <h2>MySQL</h2>
+            </div>
+            <div class="skill-card">
+                <img src="{% static '/docker-svgrepo-com.svg' %}" alt="">
+                <h2>Docker</h2>
+            </div>
+            <div class="skill-card">
+                <img src="{% static '/aws-svgrepo-com.svg' %}" alt="">
+                <h2>AWS</h2>
+            </div>
+        </div>
+    </section>
+    <section class="experience">
+        <div class="darker-div"></div>
+        <h1>Experience</h1>
+        <div class="lighter-div">
+            <div class="exp">
+                <h2>Apprentice Django Developer</h2>
+                <div class="exp-desc">
+                    <h3>Belgaum, Karnataka</h3>
+                    <p>As an apprentice Django Developer at Masterwits Software Solutions, I have gained valuable hands-on experience in developing and maintaining web applications using Django framework. Collaborating closely with senior developers, I have contributed to feature implementation, debugging, and testing phases. This role has enhanced my proficiency in Django development and reinforced my understanding of software development best practices.</p>
+                </div>
+            </div>
+            <div class="exp">
+                <h2>Python Django Developer</h2>
+                <div class="exp-desc">
+                    <h3>Pune, Maharashtra</h3>
+                    <p>During my tenure at Tata Consultancy Services as a Django Developer, I was involved in the full lifecycle development of web applications using Python and Django. I successfully delivered projects by translating complex requirements into scalable solutions, leveraging Django's robust features. This experience not only strengthened my technical skills but also honed my ability to work effectively within cross-functional teams to achieve project milestones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project" id="portfolio-loc">
+        <h1>Projects</h1>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="{% static '/images/aperture-vintage-HF1IO60tQdc-unsplash.jpg' %}" alt="">
+                <div class="overlay">
+                    <h3>Face Recognition</h3>
+                    <p>Face Recognition Attendance System: Streamlining Check-Ins with Python and OpenCV!</p>
+                    <button>View</button>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="{% static '/images/warren-umoh-K7M7dQO-HrA-unsplash.jpg' %}" alt="">
+                <div class="overlay">
+                    <h3>Portfolio</h3>
+                    <p>Showcasing My Python and Django Projects: Innovative Web Solutions with Dynamic HTML Interfaces!</p>
+                    <button>View</button>
+                </div>
+            </div>
+        </div>
+        <form action="{% url 'view_github_project' %}" method="get">
+            <button type="submit">View</button>
+        </form>
+    </section>
+    <section class="portfolio" id="portfolio-loc">
+        <h1>Certificates</h1>
+        <div class="portfolio-cards">
+            <div class="portfolio-card">
+                <img src="{% static '/images/Become a Python Developer.png' %}" alt="">
+                <div class="overlay">
+                    <h3>Become a Python Developer</h3>
+                    <p>Python Developer Certification Achieved: Mastered Key Skills in Data Structures, Software Development, and Python!</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="{% static '/images/python.png' %}" alt="">
+                <div class="overlay">
+                    <h3>Python Mastery</h3>
+                    <p>Python Programming Mastery: From Basics to Advanced!</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="{% static '/images/IBM DB0101EN Certificate _ SQL.png' %}" alt="">
+                <div class="overlay">
+                    <h3>SQL and Relational Databases 101</h3>
+                    <p>Certified in SQL and Relational Databases 101 by CognitiveClass.ai, Powered by IBM Developer Skills Network!</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="{% static '/images/Python MySQL.png' %}" alt="">
+                <div class="overlay">
+                    <h3>Python MySQL</h3>
+                    <p>Certificate of Completion: Python MySQL Course by Great Learning Academy!</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="{% static '/images/python certificate by Infosys.png' %}" alt="">
+                <div class="overlay">
+                    <h3>Beginning Python</h3>
+                    <p>Certificate: Mastering the Basics of Python Programming Issuer: Infosys | Springboard!</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="{% static '/images/2192254_Agile for Beginners_Completion_Certificate.png' %}" alt="">
+                <div class="overlay">
+                    <h3>Agile for Beginners</h3>
+                    <p>Mastering Agile Basics: Completed Agile for Beginners Course by Tata Consultancy Services!</p>
+                </div>
+            </div>
+        </div>
+        <form action="{% url 'view_certificates' %}" method="get">
+            <button type="submit">View More</button>
+        </form>
+    </section>
+    <section class="contact-me" id="contact-loc">
+        <h1>Contact Me</h1>
+        <div class="contact">
+            <div class="contact-card">
+                <i class="ri-message-3-line"></i>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit">Send</button>
+                </form>
+                {% if success_message %}
+                    <p>{{ success_message }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    <script src="{% static '/script.js' %}"></script>
+</body>
+
+</html>
+
